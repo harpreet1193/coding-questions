@@ -1,4 +1,4 @@
-package com.example.codingquestions;
+package com.example.codingquestions.backtracking;
 
 import java.util.ArrayList;
 import java.util.Collections;
