@@ -3,7 +3,7 @@ package com.example.codingquestions.dynamicProgramming;
 public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
-        int [] nums =new int[]{1,2,3,5,4,8,3,10};
+        int [] nums =new int[]{7,7,7,7,7,7,7};
         System.out.println(lengthOfLIS(nums));
     }
 
@@ -13,13 +13,12 @@ public class LongestIncreasingSubsequence {
         for (int x : num){
             int i = 0;
             int j = size;
-
             while (i!=j){
                 int m = (i+j)/2;
-                if (tails[m] > x){
-                    j = m;
-                } else {
+                if (tails[m] < x){
                     i = m +1;
+                } else {
+                    j = m;
                 }
             }
             tails[i] = x;
