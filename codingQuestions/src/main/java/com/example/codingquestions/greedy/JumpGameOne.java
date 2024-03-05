@@ -25,8 +25,5 @@ public class JumpGameOne {
                 return false;
         }
         return true;
-
-
-
     }
 }
