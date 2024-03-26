@@ -18,7 +18,7 @@ public class LetterCombinationsNumber {
 
     private static List<String> letterCombinations (String digits){
         List<String> list = new ArrayList<>();
-        if (digits.length()==0){
+        if (digits.isEmpty()){
             return list;
         }
         Queue<String> qu = new LinkedList<>();
@@ -29,12 +29,12 @@ public class LetterCombinationsNumber {
             if (s.length() == digits.length()){
                 list.add(s.toString());
             } else {
-                String val = table[Integer.parseInt(String.valueOf(digits.charAt(s.length())))];
+                String val = table[Integer.parseInt(digits.substring(s.length(), s.length() + 1))];
                 for (int i = 0;i <val.length();i++){
                     qu.add(s.toString() + val.charAt(i));
                 }
             }
         }
-    return list;
+        return list;
     }
 }

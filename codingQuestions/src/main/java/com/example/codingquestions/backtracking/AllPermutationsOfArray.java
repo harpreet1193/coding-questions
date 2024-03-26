@@ -11,15 +11,7 @@ public class AllPermutationsOfArray {
         int []nums = new int[]{1,2,3};
         List<List<Integer>> res = new ArrayList<>();
         permute(nums, res, 0, nums.length - 1);
-        Map<Integer, Integer> mp = new HashMap<>();
         System.out.println(res);
-        byte a=94;
-        char b='A';
-        int c=1005;
-        float d=718.88F;
-//        double e = Double.parseDouble(a)
-
-        double[] arr;
     }
 
 
