@@ -1,4 +1,4 @@
-package com.example.codingquestions;
+package com.example.codingquestions.misc;
 
 import java.util.ArrayList;
 import java.util.Arrays;

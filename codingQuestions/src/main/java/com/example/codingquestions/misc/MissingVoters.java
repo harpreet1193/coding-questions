@@ -1,4 +1,4 @@
-package com.example.codingquestions;
+package com.example.codingquestions.misc;
 
 import java.math.BigInteger;
 import java.util.*;

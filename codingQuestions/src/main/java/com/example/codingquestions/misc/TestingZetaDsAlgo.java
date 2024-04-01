@@ -1,6 +1,5 @@
-package com.example.codingquestions.trees;
+package com.example.codingquestions.misc;
 
-import com.example.codingquestions.ZetaDsAlgo;
 
 public class TestingZetaDsAlgo {
 

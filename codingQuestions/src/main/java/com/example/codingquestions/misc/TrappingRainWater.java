@@ -1,4 +1,4 @@
-package com.example.codingquestions;
+package com.example.codingquestions.misc;
 
 /**
  * Given an array arr[] of N non-negative integers representing the height of blocks.

@@ -1,4 +1,4 @@
-package com.example.codingquestions;
+package com.example.codingquestions.misc;
 
 /*
 Given the heads of two singly linked-lists headA and headB,
