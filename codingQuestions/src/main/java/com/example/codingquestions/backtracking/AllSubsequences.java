@@ -13,8 +13,8 @@ public class AllSubsequences {
     }
 
     public static List<String> allSubsequence(String str, String ans) {
-        if (str.length() ==0 ){
-            if (ans.length() ==0 ){
+        if (str.isEmpty()){
+            if (ans.isEmpty()){
                 return List.of();
             }
             return List.of(ans);
