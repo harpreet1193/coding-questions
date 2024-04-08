@@ -12,7 +12,7 @@ public class KthSmallestElement {
         TreeNode root = null;
         int keys[] = { 20, 8, 22, 4, 12, 10, 14 };
         for (int x : keys)
-            root = insert(root, x);
+            root = TreeNode.insert(root, x);
         System.out.println("1 Smallest " + kthSmallest(root, 1).val);
         count = 0;
         System.out.println("2 Smallest " + kthSmallest(root, 2).val);
@@ -22,17 +22,6 @@ public class KthSmallestElement {
         System.out.println("4 Smallest " + kthSmallest(root, 4).val);
     }
 
-
-    public static TreeNode insert(TreeNode root, int x)
-    {
-        if (root == null)
-            return new TreeNode(x);
-        if (x < root.val)
-            root.left = insert(root.left, x);
-        else if (x > root.val)
-            root.right = insert(root.right, x);
-        return root;
-    }
 
     public static TreeNode kthSmallest(TreeNode root, int k) {
         if (root == null){

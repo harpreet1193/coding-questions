@@ -11,4 +11,15 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
+    public static TreeNode insert(TreeNode root, int x)
+    {
+        if (root == null)
+            return new TreeNode(x);
+        if (x < root.val)
+            root.left = insert(root.left, x);
+        else if (x > root.val)
+            root.right = insert(root.right, x);
+        return root;
+    }
 }
