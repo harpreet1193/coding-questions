@@ -1,4 +1,4 @@
-package com.example.codingquestions.misc;
+package com.example.codingquestions.stack;
 
 import java.util.Stack;
 

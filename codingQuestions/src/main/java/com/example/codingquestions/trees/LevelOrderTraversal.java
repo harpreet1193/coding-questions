@@ -1,19 +1,9 @@
 package com.example.codingquestions.trees;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class LevelOrderTraversal {
-    static class Node{
-        int level;
-        TreeNode node;
-        Node(int level, TreeNode node){
-            this.level = level;
-            this.node = node;
-        }
-    }
 
     public static void main (String []args){
         TreeNode root = new TreeNode(10);
